@@ -20,5 +20,5 @@ centred L ink, complete expected variants and rendered visual inspection.
 Outcome: seven SVG variants and 128/512px PNG tiles prepared, with a rendered
 light/dark preview. Source hash, XML, bounds, centring and missing-glyph negative
 control pass. The preview was visually inspected, including actual small icons.
-The 97.5-degree golden palette remains a review candidate. No account or
+Steve approved the L, wordmark and 97.5-degree golden palette on 2026-10-20. No account or
 extension branding was changed, and no temporary process or workspace was used.
