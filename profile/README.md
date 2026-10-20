@@ -7,10 +7,12 @@ follows, with other languages considered through the same evidence-led process.
 The scope includes parsers, analysis, diagnostics and language services, including
 LSP tools for editors. Interpreters and compilers are possible later capabilities.
 
-**Status: foundation and design.** There is no released parser, language server,
-interpreter or compiler yet. The [project repository](https://github.com/lang198x/lang198x)
-contains the first AMOS milestone proposal and a small comparison corpus linked
-to original-runtime observations.
+**The first [AMOS language kit](https://github.com/lang198x/amos) is available.**
+It provides a small Rust parser/checker and reusable TextMate highlighting for
+Shiki and VS Code. Coverage is deliberately bounded and explicit; native-file
+output, LSP and compilation remain future work. The
+[hub](https://github.com/lang198x/lang198x) holds cross-language research and
+coordination. Each language has its own repository and AST.
 
 ## Work with us
 

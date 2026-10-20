@@ -10,15 +10,20 @@ and language services including LSP tools. The curriculum is a first consumer,
 not the limit on correctness.
 
 - `.github/`: org profile, foundation documents and this canonical context.
-- `lang198x/`: flagship source/design repository; foundation stage, no parser yet.
+- `lang198x/`: cross-language coordination/research hub; retained foundation records.
+- `amos/`: AMOS frontend, current corpus and reusable highlighting packages.
+
+Keep implementation files small; AMOS uses one supported instruction per Rust
+module. Each language owns its AST. Share interfaces only for demonstrated need.
 
 Child folders are independent Git repos. Commit in the owning repo. Org-container
 AGENTS.md points here; CLAUDE.md points to AGENTS.md. Cross-project decisions
 belong in the umbrella, project-only choices in the flagship's decisions folder.
 
-AMOS comes first, with versions and extensions explicit; Blitz follows. No
-universal grammar, interpreter, compiler or migration is commissioned by the
-foundation. Agree a bounded implementation design before adding parser code;
+AMOS comes first, with versions and extensions explicit; Blitz follows. The first kit
+implements only the documented opening-program surface. No universal grammar,
+interpreter, compiler or migration is commissioned. Agree a bounded design
+before adding new parser behaviour;
 ask before dependencies or breaking APIs.
 
 Keep source analysis, static checks and original execution distinct. Reuse
