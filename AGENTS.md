@@ -12,9 +12,13 @@ not the limit on correctness.
 - `.github/`: org profile, foundation documents and this canonical context.
 - `lang198x/`: cross-language coordination/research hub; retained foundation records.
 - `amos/`: AMOS frontend, current corpus and reusable highlighting packages.
+- `syntax/`: `lang198x-syntax`, the shared lossless tree every front end builds on.
 
 Keep implementation files small; AMOS uses one supported instruction per Rust
-module. Each language owns its AST. Share interfaces only for demonstrated need.
+module. Each language owns its grammar, AST and meaning; front ends share only
+the building blocks in `syntax/`, under the
+[shared syntax layer decision](https://github.com/lang198x/lang198x/blob/main/decisions/shared-syntax-layer.md).
+Dialects that share a parser form a family with one repository.
 
 Child folders are independent Git repos. Commit in the owning repo. Org-container
 AGENTS.md points here; CLAUDE.md points to AGENTS.md. Cross-project decisions

@@ -12,7 +12,8 @@ It provides a small Rust parser/checker and reusable TextMate highlighting for
 Shiki and VS Code. Coverage is deliberately bounded and explicit; native-file
 output, LSP and compilation remain future work. The
 [hub](https://github.com/lang198x/lang198x) holds cross-language research and
-coordination. Each language has its own repository and AST.
+coordination. Each language family has its own repository and AST, built on
+a [shared lossless syntax tree](https://github.com/lang198x/syntax).
 
 ## Work with us
 
