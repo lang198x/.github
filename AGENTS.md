@@ -13,6 +13,7 @@ not the limit on correctness.
 - `lang198x/`: cross-language coordination/research hub; retained foundation records.
 - `amos/`: AMOS frontend, current corpus and reusable highlighting packages.
 - `syntax/`: `lang198x-syntax`, the shared lossless tree every front end builds on.
+- `z80-asm/`: `lang198x-z80-asm`, the Z80 assembler family: one parser, a profile per dialect, starting with PasmoNext 0.1.3.
 
 Keep implementation files small; AMOS uses one supported instruction per Rust
 module. Each language owns its grammar, AST and meaning; front ends share only
