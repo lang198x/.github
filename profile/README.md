@@ -15,6 +15,12 @@ output, LSP and compilation remain future work. The
 coordination. Each language family has its own repository and AST, built on
 a [shared lossless syntax tree](https://github.com/lang198x/syntax).
 
+**Assembly is moving here too.** The [Z80 family](https://github.com/lang198x/z80-asm)
+has started: one parser for Z80 assemblers that share a structure, with a
+profile per dialect, beginning with PasmoNext. It feeds the
+[Asm198x](https://github.com/asm198x) assembler, and a dialect counts as
+supported once the result matches the real assembler byte for byte.
+
 ## Work with us
 
 Useful contributions include release notes, small reproducible language cases,
